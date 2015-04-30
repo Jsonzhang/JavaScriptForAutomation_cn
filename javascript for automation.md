@@ -1,6 +1,6 @@
 
 #说明
-在 OS X Yosemite 之后的OS系统中我们可以使用 Javascript 来完成自动完成一些系统的工作，这篇文章是有关这方面的知识阐述。
+在 OS X Yosemite 之后的OS系统中我们可以使用 Javascript 来自动完成一些系统的工作，这篇文章是有关这方面的知识阐述。
 
 #内容
 
@@ -26,12 +26,12 @@
 
 [id]: jianjie
 ##简介
-Javascript 在 Mac 环境下执行可以引用以下这些全局变量来完成一些系统级别的任务：
+Automation里使用的JavaScript宿主环境增加了下列全局属性。
 `Automation`  `Application`  `Library`  `Path`  `Progress`  `ObjectSpecifier`  `delay` `console.log`  `ObjC`  `Ref`  `$`
 
-###OSA 组件
+###OSA（Open Scripting Architecture）组件
 
-在OS系统中通过调用 Javascript 的 OSA 组件来实现自动完成系统工作的功能。在脚本编辑器，全局脚本菜单，Automator程序中的”运行Javascript”操作，applets/droplets ， osascript 命令行工具， NSUserScriptTask API 等等环境中都会调用这个 OSA 组件，所以在这些环境里你可以像写 Applescript 一样，用 Javascript 来自动完成诸如操作邮件，操作文件夹，地址簿插件，日历闹钟脚本或者发出触发事件的消息这类工作。
+Javascript版的Automation由OSA组件实现。组件可以通过脚本编辑器，全局脚本菜单，在 Run Javscript Automator Action，applets/droplets ， osascript 命令行工具， NSUserScriptTask API 等等环境中调用，所以在这些环境里你可以像写 Applescript 一样，用 Javascript 来自动完成诸如操作邮件，操作文件夹，地址簿插件，日历闹钟脚本或者发出触发事件的消息这类工作。
 
 ###脚本字典
 
